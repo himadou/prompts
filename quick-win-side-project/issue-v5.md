@@ -208,7 +208,7 @@ Use the lowest tier at which the paid product still works.
 
 - A T4 form is valid only if its predefined values can be listed in advance from a source (public data, regulation, sector standard, named expert).
 - **T5 is allowed in two cases:**
-  1. **Synthetic-first T5:** the structure of the private data can be modelled accurately from a documented source (a standard export format, published software documentation, a sector data standard, a public template). Before the sale, the developer builds and demonstrates the product only on synthetic data built from that model, and never receives real private data. After the sale, the product runs on the customer's real data, preferably in the customer's own environment (the customer hosts or runs it). If the developer would process the real data, state the GDPR legal basis and any national rules for hosting that kind of data, and check them in Pre-check. Name the source of the data model. "Works the same on real data" stays an inferred fact until the first customer confirms it; make that confirmation part of delivery.
+  1. **Synthetic-first T5:** the structure of the private data can be modelled accurately from a documented source (a standard export format, published software documentation, a sector data standard, a public template). Before the sale, the developer builds and demonstrates the product only on synthetic data built from that model, and never receives real private data. After the sale, the product runs on the customer's real data, preferably in the customer's own environment (the customer hosts or runs it). If the developer would process the real data, state the GDPR legal basis and any national rules for hosting that kind of data, and check them in Pre-check. Name the source of the data model. "Works the same on real data" stays an inferred fact until the first customer confirms it; make that confirmation part of delivery. The synthetic data don't need to be highly structured. They can also be unstructured documents, such as passports or invoices, that an LLM can process regardless of variations in their structure.
   2. **Last-resort T5:** the developer needs real private data to build or demonstrate the product. Allowed only if no T1–T4 or synthetic-first T5 candidate survived with a viable gain and growth path. Name the candidates that were checked.
 - **Special-category data (Article 9 GDPR, e.g. health):** if the data subjects are individuals whose special-category data would be involved, last-resort T5 is excluded. Synthetic-first T5 is allowed only if the developer never accesses the real data (the customer hosts or runs the product). T3 and T4 must not collect such data.
 
@@ -217,7 +217,7 @@ Use the lowest tier at which the paid product still works.
 **Product:** a tool, dataset, document or content. It is one focused feature that plugs into the payer's existing tools and complements the ecosystem rather than competing with it. Never a full software or ERP. **DFY** (Done For You) is only a delivery mode, either manual delivery of the first version or a paid service on top. The manual share per customer should shrink over time.
 
 **Money levers** (ways to make money for the customer; examples, not exhaustive):
-- (a) new customers;
+- (a) new customers;how can we better manage the workload if the customer already has more customers?
 - (b) larger orders;
 - (c) more frequent purchases;
 - (d) recovering lost revenue, without straining the customer's relations with its own clients (see Counted recoveries);
@@ -229,7 +229,7 @@ Use the lowest tier at which the paid product still works.
 - (j) outcome-based pricing, or capturing grants and tax credits;
 - (k) preventing major losses (fines excluded).
 
-**Developer:** an information expert, not a domain expert. Skills are information architecture, data curation, AI, AI coding agents and no-code.
+**Developer:** an information expert, not a domain expert. Skills are information architecture, data curation, AI, AI coding agents or no-code.
 - Domain knowledge comes from sources, the customer or a named expert.
 - When the output needs domain judgment, the product produces a draft that the expert validates.
 - The developer never performs or signs Regulated acts.
