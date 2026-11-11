@@ -19,7 +19,7 @@ Terms in **bold** are defined once in the Reference part. The Procedure tells yo
 
 | # | Step | Budget | Output | Gate (continue only if) |
 |---|---|---|---|---|
-| 1 | Discovery: scan | 8 searches (at least 4 on Emerging sources) | Money workflow map; at most 3 focus areas | at least 1 focus area found, else report "no idea qualifies" |
+| 1 | Discovery: scan | 8 searches (at least 4 on Emerging sources) | At most 3 focus areas | at least 1 focus area found, else report "no idea qualifies" |
 | 2 | Discovery: deep | 16 searches, on the focus areas only | At most 3 candidate cards opened | — |
 | 3 | Pre-check | 8 searches per candidate | Pre-check facts; criteria rated on each card | no Failed criterion; Unverified rule respected |
 | 4 | First attacks (1, 2) | 1 search per attack, +1 English search for attack 1; 2 sources opened per attack | Attacks 1–2 rated on each card | neither attack is Fatal |
@@ -58,14 +58,10 @@ Inputs change on every run. Apply this run's values; never treat values from exa
 ## Step 1: Discovery, scan
 
 **Do:**
-1. Map 1 to 3 **Money workflows** of the Prospect unit (see Reference). For each workflow step, record from sources:
-   - what money is won, spent, lost or delayed there (rough amount and frequency, labelled);
-   - the interacting industry at the step or handoff, if any (see **Scope**);
-   - the lowest **Data tier** a product at that step would need.
-2. Search the **Discovery options** (see Reference) to find where money already leaks, waits or is spent on workarounds, and attach what you find to workflow steps.
-3. Choose at most 3 **focus areas**. A focus area is one workflow step, or one handoff between the Industry and an interacting industry. Prefer steps with the largest money leak or wait that can be sold at the lowest data tier. Explain each choice.
+1. Search the **Discovery options** (see Reference) to find where money is already spent, lost or delayed, including at handoffs with interacting industries (see **Scope**).
+2. Choose at most 3 **focus areas**. A focus area is one recurring task or problem inside the Industry, or one handoff between the Industry and an interacting industry. Prefer areas with the most money at stake that a product could address at the lowest **Data tier**. Explain each choice.
 
-**Output:** the workflow map and the focus areas, with sources.
+**Output:** the focus areas, with sources.
 
 ## Step 2: Discovery, deep
 
@@ -99,10 +95,9 @@ Then rate every **Hard criterion** on the card, using the **Ratings** rules.
 
 ## Step 5: Offer
 
-**Do:** for each remaining candidate, design the value ladder and the paid offer (see **Value ladder and offer**). The paid offer covers one workflow step only; the next steps go on the card as the upsell and growth path.
+**Do:** for each remaining candidate, design the value ladder and the paid offer (see **Value ladder and offer**).
 
 **Output:** value ladder, paid offer and risk reversal on each card.
-**Gate:** if the gain can't be shown without selling more than one workflow step, criterion 5 is Failed; reject the candidate.
 
 ## Step 6: Remaining attacks
 
@@ -114,7 +109,7 @@ Then rate every **Hard criterion** on the card, using the **Ratings** rules.
 ## Step 7: Selection and final recheck
 
 **Do:** if several candidates survive, compare them in this order:
-1. **Gain and growth together,** including the next workflow steps. The Revenue indication is a hint: don't reject a candidate for low first revenue if it can grow, and don't favour one only for high first revenue.
+1. **Gain and growth together.** The Revenue indication is a hint: don't reject a candidate for low first revenue if it can grow, and don't favour one only for high first revenue.
 2. **Competition level:** Open, then Contested, then Crowded. A Crowded candidate wins only with a named angle that others don't cover.
 3. **Data tier:** the lowest wins. A higher tier wins only if its gain or growth is clearly larger; justify this. Synthetic-first T5 ranks after T4. Last-resort T5 follows its rule.
 4. **Tie-breaker:** the faster signed commitment, then the smaller build.
@@ -137,7 +132,6 @@ Protect, in this order: (1) the money evidence and calculation; (2) attacks 1 an
 - [ ] Criterion 1 has at least one verified input; no candidate has more than one Unverified criterion, nor one on criteria 1, 6 or 7.
 - [ ] Every kill finding was written before its first search and not changed afterwards.
 - [ ] The data tier is the lowest that works, and the T5 and Article 9 rules are respected.
-- [ ] The paid offer covers one workflow step; the next steps are in the growth path.
 - [ ] Every candidate examined has a line for Already explored ideas.
 
 ---
@@ -154,14 +148,6 @@ The Industry is a starting point for exploration, not a limit. Do not look only 
 - any other industry that takes part in a shared task with the Industry, including ones that look unrelated at first.
 
 For each problem, explain its relationship to the Industry, which interacting industry is involved, and the value of solving it for each side. Every candidate must involve the Industry: a problem that concerns only other industries is out of scope.
-
-## Money workflow
-
-A **Money workflow** is a chain of steps in the payer's business through which money is won, delivered, billed, collected, kept or spent. For example: attract → convert → deliver → bill → get paid → retain → sell again; or buy → stock → use → reorder. Include the handoffs with interacting industries, where money often leaks or waits.
-
-- Each step carries: the money at stake (labelled), the money levers (a)–(k) that apply, the interacting industry involved, and the lowest data tier a product there would need.
-- The first sale covers **one step**: the one with the best mix of money at stake, low data tier and short build.
-- The next steps of the same workflow form the upsell and growth path. Order them so that the data asked of the customer only rises after payment, in line with the value ladder.
 
 ## Definitions
 
@@ -228,7 +214,7 @@ Use the lowest tier at which the paid product still works.
 
 ## Product, money and developer
 
-**Product:** a tool, dataset, document or content. It is one focused feature, at one workflow step, that plugs into the payer's existing tools and complements the ecosystem rather than competing with it. Never a full software or ERP. **DFY** (Done For You) is only a delivery mode, either manual delivery of the first version or a paid service on top. The manual share per customer should shrink over time.
+**Product:** a tool, dataset, document or content. It is one focused feature that plugs into the payer's existing tools and complements the ecosystem rather than competing with it. Never a full software or ERP. **DFY** (Done For You) is only a delivery mode, either manual delivery of the first version or a paid service on top. The manual share per customer should shrink over time.
 
 **Money levers** (ways to make money for the customer; examples, not exhaustive):
 - (a) new customers;
@@ -254,11 +240,11 @@ Use the lowest tier at which the paid product still works.
 2. **Recurrence:** the problem occurs at least yearly and survives the first fix.
 3. **Reason to act now:** the problem is live, or recurs within 90 days of the Run date.
 4. **Access:** most prospects have a public contact channel, and the payer can sign without long procurement.
-5. **Build:** a first sellable version of one workflow step, including outreach, can be ready in time to sign a sale within the Time to first sale, and within Developer time if that Input is set. State the estimated hours, split into pre-sale build, outreach and per-customer delivery.
+5. **Build:** a first sellable version, including outreach, can be ready in time to sign a sale within the Time to first sale, and within Developer time if that Input is set. State the estimated hours, split into pre-sale build, outreach and per-customer delivery.
 6. **Developer fit:** no domain expertise is needed from the developer.
 7. **Data minimisation:** the data tier is stated and justified, and the T5 rules are respected.
 8. **Productisable:** per-customer hours are small compared with the price.
-9. **Market and growth:** a small, irregular first market is fine. State the growth path, starting from the next steps of the Money workflow and the Growth paths Input, and what must be true for it to become a real business.
+9. **Market and growth:** a small, irregular first market is fine. State the growth path, starting from the Growth paths, and what must be true for it to become a real business.
 
 ## Value ladder and offer
 
@@ -269,9 +255,8 @@ Prove value before asking for money, and ask for money before asking for private
 | 0. Demo | nothing | generic sample (T1–T2), or a demo on synthetic data (synthetic-first T5) |
 | 1. Free analysis | nothing | output personalised from their public data (T3) |
 | 2. Form (T4) | predefined answers | tailored preview |
-| 3. Paid product | signed commitment | full product for one workflow step |
+| 3. Paid product | signed commitment | full product |
 | 4. Private data (T5 only) | data, after payment, processed preferably in their own environment | the product running on their real data, with its GDPR legal basis |
-| 5. Next steps | further commitments | the next workflow steps (upsell), each following stages 0–4 again |
 
 - **Free stages:**
   - The first contact delivers stage 0 or 1, with no call, sign-up, data or purchase requested.
@@ -316,8 +301,7 @@ Open one card per candidate in Step 2 and update it at every step. Fill in each 
 ```
 CANDIDATE: <name>                         STATUS: open | rejected (step, reason) | selected
 --- Discovery (Steps 1–2)
-Focus area / workflow:      <workflow name> → step sold first: <step>
-Next workflow steps:        <step> · money at stake · data tier   (one line each)
+Focus area:                 <focus area>
 Problem and payer:          <who has it, how often> · payer: <type, industry>
 Interacting industry:       <industry, relationship to the Industry> or none
 Discovery options:          <which found it>
@@ -345,29 +329,28 @@ Recommend one idea at most. Build the report from the cards.
 
 **If an idea survives:**
 1. **Problem:** the idea's name, who has the problem, how often, and the gain in euros (calculation, labels, low–high range). Include its focus area, the discovery options that found it, and the interacting industry involved, if any.
-2. **Money workflow:** the map of the workflow, the money at each step, the data tier of each step, which step is sold first, and why.
-3. **Why common, and why still open:** evidence, timing leverage, emerging sources, competition level (with offers found), and awareness.
-4. **Data tier:** why a lower tier fails. For synthetic-first T5, the data model source and how real-data fit will be confirmed. For last-resort T5, the candidates checked first.
-5. **Stack:**
+2. **Why common, and why still open:** evidence, timing leverage, emerging sources, competition level (with offers found), and awareness.
+3. **Data tier:** why a lower tier fails. For synthetic-first T5, the data model source and how real-data fit will be confirmed. For last-resort T5, the candidates checked first.
+4. **Stack:**
    - tools and public data sources (with licence);
    - inputs and outputs;
    - the T4 form specification, or the synthetic data model;
    - what is automated and what is manual;
    - estimated hours for the pre-sale build, outreach and per customer.
-6. **Why customers will choose it** over the network's tools, competitors, in-house work, free options and general AI.
-7. **First sale:**
+5. **Why customers will choose it** over the network's tools, competitors, in-house work, free options and general AI.
+6. **First sale:**
    - the value ladder;
    - the paid offer (price, payment date, delivery mode);
    - the risk reversal;
    - the first prospects, or how to list them;
    - the outreach channel;
    - a day-by-day plan to a signed commitment.
-8. **Growth path:** the next workflow steps as upsells, then the other Growth paths, and what must be true for it to become a real business.
-9. **Adversarial results:** the kill findings written in advance, a table of ratings with sources, and the pilot tests for Weakened attacks, the Unverified criterion and the inferred facts that criteria depend on.
-10. **Rejected ideas:** each with its emerging source, competition level, data tier, and failed criterion or kill finding.
-11. **Evidence limits:** the main assumptions, what was cut if the budget ran short, and what the first sale would prove.
-12. **Explored ideas:** the ideas from the Input that were skipped, and any idea revisited with the new fact that justifies it.
-13. **Line to add to Already explored ideas:** one line for every candidate examined in this run, in the Input's format, ready to paste into the next run. Use status **proposed** for the recommended idea.
+7. **Growth path:** starting from the Growth paths, and what must be true for it to become a real business.
+8. **Adversarial results:** the kill findings written in advance, a table of ratings with sources, and the pilot tests for Weakened attacks, the Unverified criterion and the inferred facts that criteria depend on.
+9. **Rejected ideas:** each with its emerging source, competition level, data tier, and failed criterion or kill finding.
+10. **Evidence limits:** the main assumptions, what was cut if the budget ran short, and what the first sale would prove.
+11. **Explored ideas:** the ideas from the Input that were skipped, and any idea revisited with the new fact that justifies it.
+12. **Line to add to Already explored ideas:** one line for every candidate examined in this run, in the Input's format, ready to paste into the next run. Use status **proposed** for the recommended idea.
 
 **If nothing survives:**
 - List the candidates, each with its emerging source, competition level, data tier, and failed criterion or kill finding.
