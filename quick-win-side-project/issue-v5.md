@@ -217,7 +217,7 @@ Use the lowest tier at which the paid product still works.
 **Product:** a tool, dataset, document or content. It is one focused feature that plugs into the payer's existing tools and complements the ecosystem rather than competing with it. Never a full software or ERP. **DFY** (Done For You) is only a delivery mode, either manual delivery of the first version or a paid service on top. The manual share per customer should shrink over time.
 
 **Money levers** (ways to make money for the customer; examples, not exhaustive):
-- (a) new customers;how can we better manage the workload if the customer already has more customers?
+- (a)new customers, or serving more customers with the same staff when demand already exceeds capacity.
 - (b) larger orders;
 - (c) more frequent purchases;
 - (d) recovering lost revenue, without straining the customer's relations with its own clients (see Counted recoveries);
