@@ -22,7 +22,7 @@ Industry:            Dental care activities (Activités de soins dentaires)
 NAF codes:           86.23Z
 Company size:        self-employed, 1–9, 10–49 or 50–249 employees (company payers only)
 Sale location:       Doubs (25), France
-Time to first sale:  14 days from the start of the work
+Time to first sale: 30 days from the start of the work (build ≤ 10 days); payment due ≤ 30 days after acceptance
 Gain visible within: 30 days after delivery, unless calculable at delivery from the payer's own figures
 Revenue indication:  about 500 € per month in total for the developer, excl. VAT (a hint, not a threshold)
 Payer types:         any (Industry companies, interacting businesses, public bodies, associations, individuals, or none of these)
@@ -33,7 +33,7 @@ Languages:           report in English; searches and customer-facing text in Fre
 Optional inputs: one line each, as value · source · date · label (verified, inferred, or "set by the person", which the run never changes). Empty lines are derived in Step 1 and labelled inferred; filled lines are a starting point that may be incomplete.
 
 ```optional_inputs
-Developer time:             (empty: no hour cap beyond the Time to first sale)
+Developer time: (empty: no hour cap beyond the Time to first sale)
 Prospect unit:
 Networks:
 Possible hosts:
@@ -142,9 +142,9 @@ The Industry is a starting point, not a limit. Explore problems inside it and wh
 
 Every candidate must involve the Industry, whoever pays. State the relationship, who is involved, and the value for each side.
 
-- **Payer:** whoever signs and pays, within Payer types, in any industry or none. State who they are, how the Industry is involved, why they pay, and how the gain reaches them in money. Company size applies only to companies. The payer must be reachable in the Sale location.
+- **Payer:** whoever commits to pay and pays, within Payer types, in any industry or none. State who they are, how the Industry is involved, why they pay, and how the gain reaches them in money. Company size applies only to companies. The payer must be reachable in the Sale location. The payer can be any body, anything.
 - **Consumer payer:** an individual buying outside any professional activity; consumer law and B2C prospecting rules apply.
-- **Sale:** a signed quote or order with a price and payment date (payment may come later). For consumer payers it counts once paid, or once the legal withdrawal period has passed or been validly waived.
+- **Sale:** an order with a price and payment date (payment may come later). For consumer payers it counts once paid, or once the legal withdrawal period has passed or been validly waived.
 - **Network:** a brand or group a prospect belongs to, often supplying software, booking and marketing. Check its coverage before assuming a gap.
 - **Host:** a third party giving access to prospects (federation, accountant, supplier, training body, software vendor, patient or consumer association).
 - **Professional ethics rules:** rules of a regulated profession on soliciting clients, advertising, fee-sharing or kickbacks (dentistry: its code of ethics).
@@ -155,10 +155,16 @@ Every candidate must involve the Industry, whoever pays. State the relationship,
 
 1. **Emerging sources**, the reasons an opening is still free:
    - **Recent change:** a rule, dataset, technology, price or market change from the last 12 months that incumbents haven't reacted to.
+   - **Budget waste**: Find existing budgets and discover what businesses are already paying for inefficiently.
    - **Arbitrage:** paid for in Comparable markets or another industry, missing here.
    - **Workaround:** spending on makeshift solutions (job adverts for manual tasks, templates sold, agencies, spreadsheets, complaints).
    - **Unexpected payer:** someone other than the obvious buyer gains, while competitors target only the obvious buyer.
    - **Operations:** a slow, manual or error-prone daily task too small or specific for existing software.
+
+   - **Orphaned customers**: When a product is acquired, sunset, price-hiked or neglected after a merger, its customers become unusually open to switching. Watch acquisition news, “we’re sunsetting” emails and sudden pricing changes. The first six months after the event is the best time to sell.
+
+   - **Expiring moats**: Patents expire, exclusive contracts end, and data-portability rules (Open Banking, DMA-style interoperability) break lock-in. Each event opens a window for a challenger or for tooling around the new openness.
+
 2. **Local and sector signals:** job adverts, trade press, regulators, owner and consumer forums, complaints, vendor pricing pages.
 3. **Starving crowd:** start with Segments to test, without assuming they qualify.
 4. **Comparable markets:** how and at what price the problem is solved there, adapted to local rules.
@@ -227,23 +233,41 @@ Use the lowest tier at which the paid product works.
 
 **Individuals:** count only cash (out-of-pocket costs or fees avoided, money recovered or earned). Their time counts only if it is paid time.
 
-**VAT:** state prices excl. VAT. When the payer can't recover VAT (individuals; VAT-exempt activities, which in France generally include medical care such as dentistry), compute the gain against the price incl. VAT.
+**VAT:** state prices as the payer actually pays them. If the developer is under the VAT franchise, price = amount paid. When comparing with competitors who charge VAT, add 20% to their price for payers who can’t recover VAT (individuals, VAT-exempt activities such as dental care).
 
 ## Product and developer
 
 - **Product:** one focused tool, dataset, document or content that plugs into the payer's existing tools and complements them. Never full software or an ERP. **DFY** (done for you) is only a delivery mode, for a manual first version or a paid service on top, and its share should shrink.
+
+- **Around the act, not inside it:** when an idea touches Regulated acts or needs domain judgment, scope the product to what surrounds the act — finding and coordinating the professional, scheduling, reminders, templates, document assembly, tracking, public information — and leave the act and the judgment to the qualified professional. A tracker records that an act is due or done, never its content or result.
+
 - **Developer:** an information expert, not a domain expert: information architecture, data curation, AI, coding agents, no-code. Domain knowledge comes from sources, the payer or a named expert. Where judgment is needed, the product drafts and the expert validates. The developer never performs or signs Regulated acts.
 
 ## Hard criteria
 
-1. **Money:** a € gain, because the payer already pays staff or outsources the work, or comparable payers pay for a solution. It must be visible within the Gain visible window, or calculable at delivery.
-   - Show the calculation, label every input, and rate source strength. At least one input must be verified, from one of these six kinds of proof: a public price of a comparable product or service; paid job adverts for the task; outsourcing listings with prices; templates or datasets sold for it; subsidies or tax credits; public tenders or supplier contracts.
-   - Supporting inputs: time per occurrence, yearly frequency, loaded hourly cost, revenue or margin per unit, a non-vendor loss rate, reachable payers with counting method, paying customers of a comparable offer, median spend on the nearest category.
+1. **Money:** find a proof that people pay to solve the problem. This list is not exhaustive:
+- staff are paid to do the job/task
+- outsourced job/task
+- documented price
+- paid comparable solution
+- a public price of a comparable product or service; 
+- paid job adverts for the task
+- Frankenstein Workarounds
+- Pre-Orders & Deposits
+- Paid Pilots / Consulting
+- Active Search & Ad Spend
+- Internal Headcount / Budget Allocation
+- High-Friction DIY Hacks
+- Angry Reviews of Competitors
+- Searching for alternatives
+- Consultant
+- Any other way that show a purchase.
+
 2. **Recurrence:** at least yearly, and it survives the first fix.
 3. **Act now:** live, or recurring within 90 days.
 4. **Access:** most prospects are reachable through channels the prospecting rules allow, and the payer signs without long procurement. Public bodies qualify only below the procurement threshold that applies, verified in Pre-check.
 5. **Build:** a first sellable version plus outreach fits the Time to first sale (and Developer time if set). Give hours for pre-sale build, outreach and per customer.
-6. **Developer fit:** no domain expertise is needed from the developer.
+6. **Developer fit:** no domain expertise is needed from the developer. If an idea needs it, first try rescoping it "around the act, not inside it" (see Product and developer); rate Failed only if no useful product remains.
 7. **Data minimisation:** the tier is stated and justified, and the Data tier rules hold.
 8. **Productisable:** per-customer hours are small compared with the price.
 9. **Market and growth:** a small first market is fine. State the growth path (from Growth paths) and what must be true for it to become a real business.
@@ -310,7 +334,7 @@ Value ladder (stages, time per prospect) · Paid offer (price excl. VAT, payment
 ## Report
 
 Recommend one idea at most. Write the selected card as a readable report:
-1. **Problem and gain:** with the € calculation.
+1. **Problem and gain:** Explain clearly the problem. Add with the € calculation. 
 2. **Why common and still open:** evidence, timing, emerging sources, competition and offers, awareness.
 3. **Data tier:** why a lower tier fails, and how the T5 or health data conditions are met.
 4. **Stack:** tools and public data with licences; inputs and outputs; form spec or data model; what is automated vs manual; hours.
@@ -325,4 +349,4 @@ Recommend one idea at most. Write the selected card as a readable report:
 13. **Run memory update:** full replacement blocks with the same names for `optional_inputs` (person-set lines unchanged), `already_explored_ideas` (with section 12), `verified_facts` (drop expired facts not re-verified), `coverage_log`, `watch_list` (drop resolved items) and `process_stats`. Never output `run_inputs` or `field_results`.
 14. **Suggested prompt changes (optional):** at most 3, each backed by `process_stats`; proposals only.
 
-**If nothing survives:** list each candidate (emerging source, competition, tier, failed criterion or kill finding); name the criterion that blocked the most; describe the best near-miss and the smallest Input or offer change that would let it qualify, without recommending it, and add it to the watch list; then give sections 12–14.
+**If nothing survives:** list each candidate (emerging source, competition, tier, failed criterion or kill finding); name the criterion that blocked the most; describe the best near-miss and the smallest Input or offer change that would let it qualify (including rescoping around the act, not inside it), without recommending it ..., and add it to the watch list; then give sections 12–14.

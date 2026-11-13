@@ -40,7 +40,7 @@ Inputs change on every run. Apply this run's values; never treat values from exa
 - **NAF codes:** 86.23Z
 - **Company size:** self-employed, 1–9, 10–49 or 50–249 employees
 - **Sale location:** Doubs (25), France
-- **Time to first sale:** 14 days from the start of the work
+- **Time to first sale:** 30 days from the start of the work (build ≤ 10 days); payment due ≤ 30 days after acceptance.
 - **Gain visible within:** 30 days after delivery, unless the gain can be calculated at delivery from the customer's own figures
 - **Revenue indication:** about 500 € per month (a hint, not a threshold)
 - **Languages:** report in English; searches and customer-facing text in French
